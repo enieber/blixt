@@ -114,7 +114,6 @@ fn main() {
         }
         Commands::Dev => {
             let runtime = tokio::runtime::Runtime::new().expect("failed to create tokio runtime");
-            let runtime = tokio::runtime::Runtime::new().expect("failed to create tokio runtime");
 
             runtime.spawn(async {
                 if tokio::signal::ctrl_c().await.is_ok() {
